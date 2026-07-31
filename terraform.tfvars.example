@@ -1,0 +1,16 @@
+# Copy this file to terraform.tfvars and adjust as needed.
+# terraform.tfvars is git-ignored so you don't accidentally commit
+# environment-specific values.
+
+aws_region        = "ap-southeast-2"
+project_name      = "g360-autoheal"
+environment       = "demo"
+
+instance_type     = "t3.micro"
+min_size          = 2
+max_size          = 3
+desired_capacity  = 2
+
+# Bonus: set to true to run the containerised page instead of bare NGINX
+enable_container  = false
+container_image   = "ghcr.io/<your-username>/g360-web:latest"
