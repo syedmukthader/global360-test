@@ -69,3 +69,8 @@ variable "container_image" {
   type        = string
   default     = "ghcr.io/example/g360-web:latest"
 }
+
+variable "auto_healing_web_tier" {
+  type    = string
+  default = "g360" # Or whatever your default is
+}
