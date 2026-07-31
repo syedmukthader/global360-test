@@ -1,6 +1,7 @@
 locals {
-  name_prefix = "${var.auto-healing_web_tier}-${var.environment}"
+  name_prefix = "${var.auto_healing_web_tier}-${var.environment}"
 }
+
 
 module "network" {
   source = "./modules/network"
